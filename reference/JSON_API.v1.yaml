@@ -8,7 +8,34 @@ info:
   description: DEALPOS DEVELOPER API
 servers:
   - url: 'https://nelsenlim.dealpos.net'
-paths: {}
+paths:
+  /Category:
+    post:
+      summary: ''
+      operationId: post-Category
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                example-1:
+                  value:
+                    ID: 273d1184-a64b-4d2d-ad98-8b38b19c3ffb
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+            examples:
+              example-1:
+                value:
+                  Name: Top/Men
+        description: ''
 components:
   schemas: {}
   securitySchemes:
@@ -19,3 +46,5 @@ components:
           tokenUrl: ''
           refreshUrl: ''
           scopes: {}
+security:
+  - jwt-token: []
