@@ -36,6 +36,35 @@ paths:
                 value:
                   Name: Top/Men
         description: ''
+      tags:
+        - category
+    delete:
+      summary: ''
+      operationId: delete-Category
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                example-1:
+                  value:
+                    ID: 273d1184-a64b-4d2d-ad98-8b38b19c3ffb
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+            examples:
+              example-1:
+                value:
+                  Name: Food/Snack/Pastries
+      tags:
+        - category
 components:
   schemas: {}
   securitySchemes:
