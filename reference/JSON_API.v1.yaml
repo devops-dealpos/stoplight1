@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: JSON_API
+  version: '1.0'
+  contact:
+    name: Nelsen Lim
+    email: nelsen@dealpos.com
+  description: DEALPOS DEVELOPER API
+servers:
+  - url: 'https://nelsenlim.dealpos.net'
+paths: {}
+components:
+  schemas: {}
+  securitySchemes:
+    jwt-token:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: ''
+          refreshUrl: ''
+          scopes: {}
