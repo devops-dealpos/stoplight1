@@ -7,7 +7,7 @@ info:
     email: nelsen@dealpos.com
   description: DEALPOS DEVELOPER API
 servers:
-  - url: 'https://nelsenlim.dealpos.net'
+  - url: 'https://nelsenlim.dealpos.net/api/v3'
 paths:
   /Category:
     post:
@@ -63,58 +63,6 @@ paths:
               example-1:
                 value:
                   Name: Food/Snack/Pastries
-      tags:
-        - category
-    get:
-      summary: ''
-      operationId: get-Category
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties: {}
-              examples:
-                example-1:
-                  value:
-                    - ID: 328ca218-0f0b-449c-8d0d-2a55113ce431
-                      Name: Top/Men
-                      Model: Men
-                    - ID: ed8e8964-d3ab-4101-834b-426b85b241b0
-                      Name: Top
-                      Model: Top
-                    - ID: dfe170ce-7599-45c9-b816-4bcd4cc43adc
-                      Name: Bottom/Men
-                      Model: Men
-                    - ID: fb839ad1-c707-4c58-a822-5c76aac5d129
-                      Name: Bottom/Women
-                      Model: Women
-                    - ID: 985b5db6-211d-407e-87a4-9b9549d70b5e
-                      Name: Shoes/Men
-                      Model: Men
-                    - ID: d88d4e4d-9f8d-43ab-8fa8-9d659774e70b
-                      Name: Shoes/Women
-                      Model: Women
-                    - ID: 49295182-9111-4019-9450-e05a54a0fedc
-                      Name: Bottom
-                      Model: Bottom
-                    - ID: c932bb44-63ea-4469-b6b6-e99f4de5b497
-                      Name: Shoes
-                      Model: Shoes
-                    - ID: c7cc81be-1047-40f9-9376-eb850bc755a7
-                      Name: Top/Women
-                      Model: Women
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties: {}
-            examples:
-              example-1:
-                value: {}
       tags:
         - category
 components:
